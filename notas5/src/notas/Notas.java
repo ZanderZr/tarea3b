@@ -5,26 +5,26 @@ import java.util.Scanner;
 public class Notas {
 
 public static void main(String[] args) {
-cali();
+califica();
 }
 
 /**
  * 
  */
-public static void cali() {
+public static void califica() {
 	Scanner reader = new Scanner(System.in);// Para pedir un dato numérico por teclado
-	int notas = 0;
+	int num_nota = 0;
 	String c = "";
 	System.out.print("Introduzca el valor de una calificación: ");
-	notas = reader.nextInt();
+	num_nota = reader.nextInt();
 	
-	if (notas >= 0 && notas < 5)
+	if (num_nota >= 0 && num_nota < 5)
 	c = "Suspenso";
-	else if (notas >= 5 && notas < 7)
+	else if (num_nota >= 5 && num_nota < 7)
 	c = "Aprobado";
-	else if (notas >= 7 && notas <9)
+	else if (num_nota >= 7 && num_nota <9)
 	c = "Notable";
-	else if (notas >= 9 && notas <= 10)
+	else if (num_nota >= 9 && num_nota <= 10)
 	c = "Sobresaliente";
 	else
 	c = "El valor de la calificación introducida no es correcta";
